@@ -1,0 +1,80 @@
+ID,Name
+119,Improper Restriction of Operations within the Bounds of a Memory Buffer
+120,Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')
+121,Stack-based Buffer Overflow
+122,Heap-based Buffer Overflow
+123,Write-what-where Condition
+124,Buffer Underwrite ('Buffer Underflow')
+125,Out-of-bounds Read
+126,Buffer Over-read
+127,Buffer Under-read
+128,Wrap-around Error
+129,Improper Validation of Array Index
+130,Improper Handling of Length Parameter Inconsistency 
+131,Incorrect Calculation of Buffer Size
+134,Use of Externally-Controlled Format String
+135,Incorrect Calculation of Multi-Byte String Length
+14,Compiler Removal of Code to Clear Buffers
+170,Improper Null Termination
+188,Reliance on Data/Memory Layout
+191,Integer Underflow (Wrap or Wraparound)
+192,Integer Coercion Error
+194,Unexpected Sign Extension
+195,Signed to Unsigned Conversion Error
+196,Unsigned to Signed Conversion Error
+197,Numeric Truncation Error
+242,Use of Inherently Dangerous Function
+243,Creation of chroot Jail Without Changing Working Directory
+244,Improper Clearing of Heap Memory Before Release ('Heap Inspection')
+362,Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')
+364,Signal Handler Race Condition
+365,Race Condition in Switch
+366,Race Condition within a Thread
+374,Passing Mutable Objects to an Untrusted Method
+375,Returning a Mutable Object to an Untrusted Caller
+401,Improper Release of Memory Before Removing Last Reference ('Memory Leak')
+415,Double Free
+416,Use After Free
+457,Use of Uninitialized Variable
+460,Improper Cleanup on Thrown Exception
+462,Duplicate Key in Associative List (Alist)
+463,Deletion of Data Structure Sentinel
+464,Addition of Data Structure Sentinel
+466,Return of Pointer Value Outside of Expected Range
+467,Use of sizeof() on a Pointer Type
+468,Incorrect Pointer Scaling
+469,Use of Pointer Subtraction to Determine Size
+474,Use of Function with Inconsistent Implementations
+476,NULL Pointer Dereference
+478,Missing Default Case in Switch Statement
+479,Signal Handler Use of a Non-reentrant Function
+480,Use of Incorrect Operator
+481,Assigning instead of Comparing
+482,Comparing instead of Assigning
+483,Incorrect Block Delimitation
+484,Omitted Break Statement in Switch
+495,Private Array-Typed Field Returned From A Public Method
+496,Public Data Assigned to Private Array-Typed Field
+558,Use of getlogin() in Multithreaded Application
+560,Use of umask() with chmod-style Argument
+562,Return of Stack Variable Address
+587,Assignment of a Fixed Address to a Pointer
+676,Use of Potentially Dangerous Function
+685,Function Call With Incorrect Number of Arguments
+688,Function Call With Incorrect Variable or Reference as Argument
+689,Permission Race Condition During Resource Copy
+690,Unchecked Return Value to NULL Pointer Dereference
+704,Incorrect Type Conversion or Cast
+733,Compiler Optimization Removal or Modification of Security-critical Code
+762,Mismatched Memory Management Routines
+781,Improper Address Validation in IOCTL with METHOD_NEITHER I/O Control Code
+782,Exposed IOCTL with Insufficient Access Control
+783,Operator Precedence Logic Error
+785,Use of Path Manipulation Function without Maximum-sized Buffer
+789,Uncontrolled Memory Allocation
+805,Buffer Access with Incorrect Length Value
+806,Buffer Access Using Size of Source Buffer
+839,Numeric Range Comparison Without Minimum Check
+843,Access of Resource Using Incompatible Type ('Type Confusion')
+910,Use of Expired File Descriptor
+911,Improper Update of Reference Count
