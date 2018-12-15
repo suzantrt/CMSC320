@@ -1,12 +1,18 @@
 import json
 import pandas as pd
+import urllib
+import os
+import gzip
+
 d = {'CVE_ID':[],'CWE':[],'accessVector':[],'accessComplexity':[],'authentication':[],'confidentialityImpact':[],'integrityImpact':[],'availabilityImpact':[],'baseScore':[],'severity':[],'exploitabilityScore':[],'impactScore':[],'publishedDate':[],'lastModifiedDate':[]}
 
-# We need to first download all the nvdcve from https://nvd.nist.gov/vuln/data-feeds#JSON_FEED and unarchived.
-
 prefix = 'nvdcve-1.0-'
+url = 'https://nvd.nist.gov/feeds/json/cve/1.0/nvdcve-1.0-'
 for year in range(2002,2019):
-    with open(prefix+str(year)+'.json','r') as f:
+    # originally I had downloaded manually for jupyter but still that failed.
+    file_tmp = urllib.request.urlretrieve(url+str(year)+'.json.gz', filename=None)[0]
+
+    with gzip.open(file_tmp,'rb') as f:
         cve = json.load(f)
 
     for c in cve['CVE_Items']:
